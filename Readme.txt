@@ -1,6 +1,18 @@
 Readme
 ======
 
-Question 2 from test
+Create a generic extension method for strings that allows a user to pass in an enum type and it returns the matching enum or null if it doesnt match
+====================================================================================================================================================
 
-Dot Net Core 3.0 aplication, developed with VS 2019 Community.
+e.g. 
+
+  string someString = "Orange";
+  
+  public enum Fruit
+  {
+	Apple,
+	Pear,
+	Orange
+  }
+  
+  Fruit? someFruit = someString.ConvertToEnum<Fruit>();
